@@ -10,6 +10,7 @@ import {
     Form,
     Input
 } from "semantic-ui-react";
+import PropTypes from 'prop-types';
 
 
 export const DECREASE_VALUE = 'DECREASE_VALUE';
@@ -262,20 +263,20 @@ class NumberPicker extends React.Component {
 }
 
 NumberPicker.propTypes = {
-    name: React.PropTypes.string.isRequired,
-    id: React.PropTypes.string,
-    value: React.PropTypes.any,
-    defaultValue: React.PropTypes.any,
-    onChange: React.PropTypes.func.isRequired,
-    placeholder: React.PropTypes.string,
-    min: React.PropTypes.number,
-    max: React.PropTypes.number,
-    step: React.PropTypes.number,
-    maxLength: React.PropTypes.number,
-    required: React.PropTypes.bool,
-    basic: React.PropTypes.bool,
-    circular: React.PropTypes.bool,
-    compact: React.PropTypes.bool
+    name: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    value: PropTypes.any,
+    defaultValue: PropTypes.any,
+    onChange: PropTypes.func.isRequired,
+    placeholder: PropTypes.string,
+    min: PropTypes.number,
+    max: PropTypes.number,
+    step: PropTypes.number,
+    maxLength: PropTypes.number,
+    required: PropTypes.bool,
+    basic: PropTypes.bool,
+    circular: PropTypes.bool,
+    compact: PropTypes.bool
 };
 
 export default NumberPicker;
